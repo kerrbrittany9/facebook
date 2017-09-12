@@ -2,8 +2,15 @@ import React from "react";
 
 class FeedForm extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.publishPost = this.publishPost.bind(this);
+  }
+
   publishPost(event) {
     event.preventDefault()
+    const { _status } = this.refs;
+    alert(`this is your status ${_status.value}`);
   }
 
   render(){
