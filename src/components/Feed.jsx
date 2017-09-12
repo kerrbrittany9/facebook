@@ -1,4 +1,5 @@
 import React from "react";
+import FeedForm from "./FeedForm";
 
 class Feed extends React.Component {
 
@@ -13,9 +14,7 @@ class Feed extends React.Component {
   render() {
     return(
       <div>
-        <h3>Post</h3>
-        <textarea placeholder="What's happening?"/>
-        <button onClick={this.publishPost}>Publish</button>
+        <FeedForm/>
       </div>
     );
   }
