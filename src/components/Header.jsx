@@ -5,7 +5,7 @@ function Header(props) {
 var headerStyle = {
     display: 'grid',
     gridTemplateColumns: '7% 7% 7% 60% 7.5% 7.5%',
-    marginBottom: '2rem'
+    marginBottom: '2rem',
   }
 
   var buttonStyle = {
@@ -21,14 +21,18 @@ var headerStyle = {
     justifySelf: 'center'
   }
 
+  var searchStyle = {
+      fontSize: '16'
+  }
+
   return (
     <div style={headerStyle}>
       <p style={buttonStyle}>Home</p>
       <p style={buttonStyle}>Notifications</p>
       <p style={buttonStyle}>Messages</p>
       <h1 style={logoStyle}>FaceClone</h1>
-      <h3>Search</h3>
-      <h3>Tweet</h3>
+    <h3 style={searchStyle}>Search</h3>
+  <h3 style={searchStyle}>Tweet</h3>
     </div>
   );
 }
