@@ -9,8 +9,8 @@ class FeedForm extends React.Component {
 
   publishPost(event) {
     event.preventDefault()
-    const { _status } = this.refs;
-    alert(`this is your status ${_status.value}`);
+    const { _username, _status } = this.refs;
+    alert(`${_username.value}, this is your status: ${_status.value}`);
   }
 
   render(){
@@ -18,6 +18,11 @@ class FeedForm extends React.Component {
       <div>
         <form onSubmit={this.publishPost}>
           <h3>Post</h3>
+          <input
+            ref="_username"
+            type="text"
+            id="username"
+            placeholder="username"/>
           <textarea
             ref="_status"
             type="text"
