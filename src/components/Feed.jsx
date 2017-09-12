@@ -8,6 +8,7 @@ class Feed extends React.Component {
     this.state = {
       masterPostList: [],
     };
+    this.publishPost = this.publishPost.bind(this);
   }
 
   publishPost(newPost) {
