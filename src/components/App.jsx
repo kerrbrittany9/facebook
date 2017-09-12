@@ -6,13 +6,24 @@ import Feed from "./Feed";
 import Requests from "./Requests";
 
 function App(props){
+
+  var mainContainerStyle = {
+    display: 'grid',
+    gridTemplateColumns: '20% 60% 10%',
+    gridGap: '3% 3%'
+  }
+
   return (
     <div>
       <Header/>
-      <Profile/>
-      <Summary/>
-      <Feed/>
-      <Requests/>
+    <div style={mainContainerStyle}>
+        <div>
+          <Profile/>
+          <Summary/>
+        </div>
+        <div><Feed/></div>
+        <div><Requests/></div>
+        </div>
     </div>
   );
 }
