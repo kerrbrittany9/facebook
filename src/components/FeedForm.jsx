@@ -13,7 +13,7 @@ class FeedForm extends React.Component {
     event.preventDefault()
     const { _username, _status } = this.refs;
     var newPost = new Post(_username.value, _status.value);
-    console.log(newPost);
+    // console.log(newPost);
     this.props.onNewPost(newPost);
   }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Feed from './Feed';
 import PropTypes from 'prop-types';
+// import Post from '../models/Post.js';
 
 function FeedList(props) {
   console.log(props.masterPostList);
