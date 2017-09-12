@@ -11,7 +11,8 @@ class FeedForm extends React.Component {
   publishPost(event) {
     event.preventDefault()
     const { _username, _status } = this.refs;
-    alert(`${_username.value}, this is your status: ${_status.value}`);
+    var newPost = new Post(_username.value, _status.value);
+    console.log(newPost);
   }
 
   render(){
