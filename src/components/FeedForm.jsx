@@ -1,5 +1,6 @@
 import React from "react";
 import Post from "../models/Post.js";
+import PropTypes from "prop-types";
 
 class FeedForm extends React.Component {
 
@@ -35,6 +36,10 @@ class FeedForm extends React.Component {
       </div>
     );
   }
+}
+
+FeedForm.propTypes = {
+  onNewPost: PropTypes.func
 }
 
 export default FeedForm;
