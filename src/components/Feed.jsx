@@ -10,8 +10,10 @@ class Feed extends React.Component {
     };
   }
 
-  publishPost(event) {
-    console.log("Post has been published");
+  publishPost(newPost) {
+    var newMasterPostList = this.state.masterPostList.slice();
+    newMasterPostList.push(newPost);
+    this.setState({masterPostList: newMasterPostList});
   }
 
   render() {
