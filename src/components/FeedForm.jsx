@@ -1,4 +1,5 @@
 import React from "react";
+import Post from "../models/Post.js";
 
 class FeedForm extends React.Component {
 
