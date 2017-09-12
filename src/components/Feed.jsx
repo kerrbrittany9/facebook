@@ -1,5 +1,6 @@
 import React from "react";
 import FeedForm from "./FeedForm";
+import FeedList from "./FeedList";
 
 class Feed extends React.Component {
 
