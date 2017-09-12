@@ -12,10 +12,11 @@ function Person(props) {
   }
 
   var statsStyle = {
-    backgroundColor: '#dedede',
+    backgroundColor: '#3B5998',
     border: '1px solid #ffffff',
     padding: '.5rem',
-    fontSize: '13px'
+    fontSize: '13px',
+    color: '#ffffff'
   }
 
   return (
