@@ -7,6 +7,10 @@ import Requests from "./Requests";
 
 function App(props){
 
+  var baseStyle = {
+    fontSize: '13'
+  }
+
   var mainContainerStyle = {
     display: 'grid',
     gridTemplateColumns: '20% 60% 10%',
@@ -14,16 +18,16 @@ function App(props){
   }
 
   return (
-    <div>
+    <div style={baseStyle}>
       <Header/>
-    <div style={mainContainerStyle}>
+      <div style={mainContainerStyle}>
         <div>
           <Profile/>
           <Summary/>
         </div>
         <div><Feed/></div>
         <div><Requests/></div>
-        </div>
+      </div>
     </div>
   );
 }
