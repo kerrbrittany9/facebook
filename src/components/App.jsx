@@ -8,7 +8,6 @@ import Requests from "./Requests";
 function App(props){
   return (
     <div>
-      <h1>Faceballs</h1>
       <Header/>
       <Profile/>
       <Summary/>

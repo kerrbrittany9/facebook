@@ -22,6 +22,7 @@ function Header(props) {
       <h3 style={homeStyle}>Home</h3>
       <h3 style={notificationStyle}>Notifications</h3>
       <h3 style={messageStyle}>Messages</h3>
+      <h1>FaceClone</h1>
       <h3>Search</h3>
       <h3>Tweet</h3>
     </div>
