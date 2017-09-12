@@ -20,7 +20,7 @@ class Feed extends React.Component {
   render() {
     return(
       <div>
-        <FeedForm/>
+        <FeedForm onNewPost={this.publishPost}/>
         <FeedList
           masterPostList = {this.state.masterPostList}/>
       </div>
