@@ -8,19 +8,12 @@ var headerStyle = {
     marginBottom: '2rem'
   }
 
-  var homeStyle = {
-    border: '1px solid grey',
-    padding: '10px 5px 0 5px',
-    textAlign: 'center'
-  }
-  var notificationStyle = {
-    border: '1px solid grey',
-    padding: '10px 5px 0 5px',
-    textAlign: 'center'
-  }
-  var messageStyle = {
-    border: '1px solid grey',
-    padding: '10px 5px 0 5px',
+  var buttonStyle = {
+    backgroundColor: '#3B5998',
+    border: '1px solid #ffffff',
+    padding: '10',
+    fontSize: '0.9rem',
+    color: '#ffffff',
     textAlign: 'center'
   }
 
@@ -30,9 +23,9 @@ var headerStyle = {
 
   return (
     <div style={headerStyle}>
-      <p style={homeStyle}>Home</p>
-      <p style={notificationStyle}>Notifications</p>
-      <p style={messageStyle}>Messages</p>
+      <p style={buttonStyle}>Home</p>
+      <p style={buttonStyle}>Notifications</p>
+      <p style={buttonStyle}>Messages</p>
       <h1 style={logoStyle}>FaceClone</h1>
       <h3>Search</h3>
       <h3>Tweet</h3>
