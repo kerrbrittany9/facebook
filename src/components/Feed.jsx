@@ -18,6 +18,8 @@ class Feed extends React.Component {
     return(
       <div>
         <FeedForm/>
+        <FeedList
+          masterPostList = {this.state.masterPostList}/>
       </div>
     );
   }
