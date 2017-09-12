@@ -1,13 +1,24 @@
 import React from "react";
 
-function Feed(props){
-  return(
-    <div>
-      <h3>What's Happening?</h3>
-      <h3>Event</h3>
-      <p>Hodor. Hodor hodor, hodor. Hodor hodor... Hodor hodor hodor - hodor?! Hodor! Hodor hodor, hodor hodor hodor, hodor, hodor hodor. Hodor hodor hodor hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor hodor? Hodor hodor... Hodor hodor hodor - hodor?! Hodor, hodor - hodor... Hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor hodor?! </p>
-    </div>
-  )
+class Feed extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  publishPost(event) {
+    console.log("Post has been published");
+  }
+
+  render() {
+    return(
+      <div>
+        <h3>Post</h3>
+        <textarea placeholder="What's happening?"/>
+        <button onClick={this.publishPost}>Publish</button>
+      </div>
+    );
+  }
 }
 
 export default Feed;
