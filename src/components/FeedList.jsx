@@ -3,6 +3,7 @@ import Feed from './Feed';
 import PropTypes from 'prop-types';
 import Post from './Post';
 
+
 function FeedList(props) {
   console.log(props.masterPostList);
   return (

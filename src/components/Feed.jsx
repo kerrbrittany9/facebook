@@ -2,6 +2,7 @@ import React from "react";
 import FeedForm from "./FeedForm";
 import FeedList from "./FeedList";
 
+
 class Feed extends React.Component {
 
   constructor(props) {
@@ -24,6 +25,7 @@ class Feed extends React.Component {
         <FeedForm onNewPost={this.publishPost}/>
         <FeedList
           masterPostList = {this.state.masterPostList}/>
+
       </div>
     );
   }
